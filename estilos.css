@@ -1,0 +1,50 @@
+body{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+
+button{
+    display: block;
+    color: white;
+    background-color: rgb(243, 84, 198);
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    border:none;
+    border-radius: 20px;
+}
+
+.fila{
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Inter';
+    font-style: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+
+input{
+    
+border:none;
+padding:12px;
+background: #D9D9D9;
+font-size: 20px;
+}
+
+.botones button{
+
+display: block;
+width: 100%;
+
+}
