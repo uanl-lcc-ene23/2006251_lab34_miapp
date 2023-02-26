@@ -1,0 +1,20 @@
+:root{
+    background-color: white;
+    }
+    
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #text{
+        min-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: italic;
+    }
+    
+    ion-input{
+        border-bottom: solid 1px lightgray;
+    
+    }
