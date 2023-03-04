@@ -1,10 +1,12 @@
 var arr=[];
+var mostrarArreglo = document.getElementById("mostrarArreglo");
 
 function agregar(){
-    var gasto = document.getElementById("gasto");
-    var monto = document.getElementById("monto");
+    let gasto = document.getElementById("gasto");
+    let monto = document.getElementById("monto");
     arr.push(gasto.value+": $"+monto.value)
     console.log(arr);
+    mostrarArreglo.innerHTML = arr;
     limpiar();
 }
 
