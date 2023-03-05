@@ -14,26 +14,54 @@
 </head>
 
 <body>
+    <ion-app>
+        <ion-menu [type]="push" content-id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Menú</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-menu-toggle>
+                <ion-button>Cerrar el menú</ion-button>
+              </ion-menu-toggle>
+            </ion-content>
+        </ion-menu>
 
-    <ion-item class="fila">
-        <ion-label position ="floating" for ="gasto">Tipo de gasto</ion-label>
-        <ion-input type="text" id="gasto" fill="outline"></ion-input>
-    </ion-item>
+        <div class="ion-page" id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                     <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>Presupuesto</ion-title>
+                </ion-toolbar>
+            </ion-header>
 
-    <ion-item class="fila">
+            <ion-content class="ion-padding">
+                <ion-item class="fila">
+                  <ion-label position ="floating" for ="gasto">Tipo de gasto</ion-label>
+                  <ion-input type="text" id="gasto" fill="outline"></ion-input>
+                 </ion-item>
+    
+                <ion-item class="fila">
+    
+                    <ion-label position = "floating" for ="monto">Monto</ion-label>
+                    <ion-input type="number" id="monto" fill="outline"></ion-input>
+    
+                </ion-item>
+    
+                <ion-item class="fila" onclick="agregar()">
+                     <ion-button>Guardar</ion-button>
+    
+                </ion-item>
+    
+                <p id="mostrarArreglo"></p>
+            </ion-content>
+        </div>
 
-        <ion-label position = "floating" for ="monto">Monto</ion-label>
-        <ion-input type="number" id="monto" fill="outline"></ion-input>
-
-    </ion-item>
-
-    <ion-item class="fila" onclick="agregar()">
-        <ion-button>Guardar</ion-button>
-
-    </ion-item>
-
-    <p id="mostrarArreglo"></p>
-
+        
+    </ion-app>
 </body>
 <script src="main.js"></script>
 </html>
