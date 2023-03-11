@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ListaAlumnosComponent {
 
-  alumnos: any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Baraba", "Georgina", "Kevin"];
+  alumnos: any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Barbara", "Georgina", "Kevin"];
 
 }
