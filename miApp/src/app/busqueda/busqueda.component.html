@@ -1,0 +1,8 @@
+<ion-label>
+    Busqueda de productos
+</ion-label>
+
+<router-outlet></router-outlet>
+<ion-searchbar (search)="navigateToVistaProducto()" show-clear-button="always" value="Buscar por id:" animated="true" [(ngModel)]="idProducto" >
+   
+</ion-searchbar>

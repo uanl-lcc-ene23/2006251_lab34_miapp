@@ -18,7 +18,7 @@ export class ProductosService {
   getCategoria(parametro: string){ //Obtiene productos por ctaegoria
     return this.https.get('https://fakestoreapi.com/products/category/'+parametro);
   }
-  getProducto(){//obtiene un producto en particular- lo va afiltrar por iD
-    //https://fakestoreapi.com/products/1
+  getProducto(id:number){//obtiene un producto en particular- lo va afiltrar por iD
+    return this.https.get('https://fakestoreapi.com/products/'+ id.toString());
   }
 }

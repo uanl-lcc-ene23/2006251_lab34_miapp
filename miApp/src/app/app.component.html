@@ -1,5 +1,6 @@
 
 <ion-app mode="ios"> <!--inicializa contenedor de ionic-->
+    
     <ion-header><!--Encabezado-->
         <ion-toolbar>
             <ion-title>
@@ -11,7 +12,22 @@
         </ion-toolbar>
     </ion-header>
 
-    <ion-content><!--Contenido-->
-        <app-productos></app-productos>
-    </ion-content>
+    
+
+      <ion-content><!--Contenido-->
+        <router-outlet></router-outlet>
+      </ion-content>
+
+     
+    <ion-tab-bar slot="bottom">
+          <ion-tab-button routerLink="/inicio" tab="inicio" >
+            <ion-icon name="home"></ion-icon>
+             Inicio
+          </ion-tab-button>
+          <ion-tab-button routerLink="/buscar" tab="buscar" >
+            <ion-icon name="search"></ion-icon>
+             Buscar
+          </ion-tab-button>
+    </ion-tab-bar>
+      
 </ion-app>
